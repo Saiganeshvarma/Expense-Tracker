@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    color: #495057;
+}
+
+.toggle-btn {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.form-section {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.transaction-section {
+    width: 50%;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+table button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table button:hover {
+    background-color: #c82333;
+}
+
+.balance-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.balance-card {
+    background-color: #f1f3f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.balance-amount {
+    font-size: 2rem;
+    color: #495057;
+}
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.total-income,
+.total-expense {
+    width: 45%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.total-income h3,
+.total-expense h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .app-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .form-section,
+    .transaction-section {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .transaction-section {
+        max-height: 250px;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .app-container {
+    background-color: #495057;
+}
+
+body.dark-mode .balance-card {
+    background-color: #6c757d;
+}
+
+body.dark-mode .total-income,
+body.dark-mode .total-expense {
+    background-color: #6c757d;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group select {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+body.dark-mode .submit-btn {
+    background-color: #218838;
+}
+
+body.dark-mode table tbody tr:nth-child(even) {
+    background-color: #495057;
+}
+
+body.dark-mode table th,
+body.dark-mode table td {
+    border-bottom: 1px solid #495057;
+}
