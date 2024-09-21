@@ -17,4 +17,5 @@ This Expense Tracker is a web application designed to help users track their dai
 
 ## How to Use
 1. Clone the repository:
+ ```bash
    git clone https://github.com/Saiganeshvarma/Expense-Tracker.git
