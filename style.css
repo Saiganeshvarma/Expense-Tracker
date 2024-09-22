@@ -191,25 +191,37 @@ body.dark-mode {
 
 body.dark-mode .app-container {
     background-color: #495057;
+    color: #f8f9fa;
+}
+
+body.dark-mode header h1 {
+    color: #f8f9fa;
 }
 
 body.dark-mode .balance-card {
     background-color: #6c757d;
+    color: #f8f9fa;
 }
 
 body.dark-mode .total-income,
 body.dark-mode .total-expense {
     background-color: #6c757d;
+    color: #f8f9fa;
 }
 
 body.dark-mode .form-group input,
 body.dark-mode .form-group select {
     background-color: #6c757d;
-    color: #fff;
+    color: #f8f9fa;
+}
+
+body.dark-mode .form-group label {
+    color: #f8f9fa;
 }
 
 body.dark-mode .submit-btn {
     background-color: #218838;
+    color: #fff;
 }
 
 body.dark-mode table tbody tr:nth-child(even) {
@@ -218,5 +230,11 @@ body.dark-mode table tbody tr:nth-child(even) {
 
 body.dark-mode table th,
 body.dark-mode table td {
-    border-bottom: 1px solid #495057;
+    color: #f8f9fa;
+    border-bottom: 1px solid #6c757d;
+}
+
+body.dark-mode .toggle-btn {
+    background-color: #6c757d;
+    color: #f8f9fa;
 }
